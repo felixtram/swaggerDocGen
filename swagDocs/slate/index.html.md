@@ -136,7 +136,10 @@ api.kittens.get()
 ```
 
 ```shell
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d "{
+curl -X POST 
+--header 'Content-Type: application/json' 
+--header 'Accept: application/json' 
+-d "{
   "Application": {
     "ApplicationID": "string",
     "ApplicationName": "string",
@@ -275,52 +278,4 @@ ShippingPhone | string
 <aside class="success">
 Remember — You must replace <code>License</code> with your personal API key.
 </aside>
-
-
-## Get a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
-
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
-### HTTP Request
-
-`GET http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
 
