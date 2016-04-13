@@ -7,4 +7,5 @@ For example, using command line navigate to the dist folder.
 Run $ python -m SimpleHTTPServer 8080
 go to localhost:8080 in browser to see the results. 
 
-swagDocs/slate has the markdown used to generate html and css using slate. To run install slate. Replace the file included with slate at the location source/index.html.md with file from swagDocs/slate/index.html.md from this repo. Host with middleman or vagrant to view sample.
+swagDocs/slate has the markdown used to generate html and css using slate. To run install slate. Replace the file included with slate at the location source/index.html.md with file from swagDocs/slate/index.html.md from this repo. Host with middleman or vagrant to view sample. 
+swagDocs/slate/build has the html, css and js that is generated with slate. 
